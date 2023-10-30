@@ -23,50 +23,48 @@ public class Ball : MonoBehaviour
     {
         _first = true;
     }
-    //private void ChangeState()
-    //{
-    //    Invoke("State", 2f);
-    //}
-    
-    private void OnCollisionStay2D(Collision2D collision)
+    public void ChangeState()
+    {
+        Invoke("State", 2f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(number.ToString()) && _first)
         {
             _ballParticle.Play();
             collision.gameObject.SetActive(false);
-            number *= 2;
+            number += number;
             gameObject.tag = number.ToString();
             _ballNumberText.text = number.ToString();
             switch (number)
             {
-                case 2:
+
+                case 4:
                     _spriteRenderer.sprite = _gameManager._sprites[1];
                     break;
-                case 4:
+                case 8:
                     _spriteRenderer.sprite = _gameManager._sprites[2];
                     break;
-                case 8:
+                case 16:
                     _spriteRenderer.sprite = _gameManager._sprites[3];
                     break;
-                case 16:
+                case 32:
                     _spriteRenderer.sprite = _gameManager._sprites[4];
                     break;
-                case 32:
+                case 64:
                     _spriteRenderer.sprite = _gameManager._sprites[5];
                     break;
-                case 64:
+                case 128:
                     _spriteRenderer.sprite = _gameManager._sprites[6];
                     break;
-                case 128:
-                    _spriteRenderer.sprite = _gameManager._sprites[7];
-                    break;
                 case 256:
-                    _spriteRenderer.sprite = _gameManager._sprites[8];
+                    _spriteRenderer.sprite = _gameManager._sprites[7];
                     break;
                 case 512:
                 case 1024:
                 case 2048:
-                    _spriteRenderer.sprite = _gameManager._sprites[9];
+                    _spriteRenderer.sprite = _gameManager._sprites[8];
                     break;                  
                     
             }
