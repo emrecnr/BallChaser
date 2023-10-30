@@ -5026,7 +5026,7 @@ GameObject:
   - component: {fileID: 95118465}
   m_Layer: 0
   m_Name: Dark_Blue_Ball 2
-  m_TagString: 2
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5412,6 +5412,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d348e8f77241f33449ac2c524c635160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: 05ae3a3ddff95a341a7e4ba045ded669, type: 3}
+  - {fileID: 21300000, guid: 6d435e67f7d018a4b8870ed03e3f694d, type: 3}
+  - {fileID: 21300000, guid: 847d83561dd6fcb458f3c249ea39d169, type: 3}
+  - {fileID: 21300000, guid: 129be833342e5bb4c8979a87aafc8725, type: 3}
+  - {fileID: 21300000, guid: 8381b0b782415a54984c3c2bfaeafefd, type: 3}
+  - {fileID: 21300000, guid: 8381b0b782415a54984c3c2bfaeafefd, type: 3}
+  - {fileID: 21300000, guid: 403ee3fc34885ab48b7a0e4fbe29d4b7, type: 3}
+  - {fileID: 21300000, guid: 868248336e111bb4e96cd83460553176, type: 3}
+  - {fileID: 21300000, guid: 4fed1190538ae2c4fa7960b7e7a8a1f5, type: 3}
+  - {fileID: 21300000, guid: 202f9a1c793409f41994944e12928771, type: 3}
 --- !u!4 &322177359
 Transform:
   m_ObjectHideFlags: 0
@@ -5421,7 +5432,7 @@ Transform:
   m_GameObject: {fileID: 322177357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51664525, y: 0.39119977, z: -0.0031592418}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11484,7 +11495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
